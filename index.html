@@ -5,47 +5,118 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Business Consultancy</title>
   <style>
-    /* Reset and basic styles */
+    /* Global styles */
     * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { font-family: 'Arial', sans-serif; color: #333; line-height: 1.6; background-color: #f8f9fa; }
+    body { font-family: 'Arial', sans-serif; color: #333; background-color: #f8f9fa; }
 
     /* Header and Navbar */
-    header { background-color: #002244; color: #fff; padding: 2rem 0; text-align: center; }
+    header { background-color: #002244; color: #fff; padding: 1rem; text-align: center; }
     header h1 { font-size: 2.5rem; font-weight: bold; }
-    nav { display: flex; justify-content: center; background-color: #00509e; padding: 1rem 0; }
+    nav { display: flex; justify-content: center; background-color: #00509e; padding: 1rem; }
     nav a { color: #fff; text-decoration: none; margin: 0 1rem; font-weight: bold; transition: color 0.3s ease; }
     nav a:hover { color: #ffcc00; }
 
     /* Hero Section */
-    .hero { height: 800px; display: flex; align-items: center; justify-content: center; color: #fff; background: linear-gradient(to right, rgba(0,36,68,0.8), rgba(0,80,158,0.8)), url('hero-image.jpg') center/cover no-repeat; }
-    .hero h1 { font-size: 3rem; text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); }
+    .hero { display: flex; align-items: center; justify-content: center; text-align: center; color: #fff; background: url('hero-image.jpg') center/cover no-repeat; height: 800px; }
+    .hero h1 { font-size: 3.5rem; text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); }
+    .hero p { font-size: 1.5rem; margin-top: 1rem; }
 
-    /* Main Content */
-    .content { padding: 4rem; text-align: center; }
-    .content h2 { color: #00509e; font-size: 2.2rem; margin-bottom: 1rem; }
-    .content p { font-size: 1.1rem; max-width: 800px; margin: auto; color: #555; }
+    /* Services Section */
+    .services { padding: 4rem; text-align: center; background-color: #e0e4e8; }
+    .services h2 { color: #00509e; font-size: 2.5rem; margin-bottom: 1rem; }
+    .services-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; max-width: 1200px; margin: auto; }
+    .service-item { background-color: #fff; padding: 2rem; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); transition: transform 0.3s; }
+    .service-item:hover { transform: scale(1.05); }
+    .service-item h3 { color: #00509e; margin-bottom: 0.5rem; }
+    .service-item p { color: #555; }
+
+    /* Features Section */
+    .features { padding: 4rem; background-color: #f0f4f7; text-align: center; }
+    .features h2 { color: #00509e; font-size: 2.5rem; margin-bottom: 1rem; }
+    .features-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem; max-width: 1000px; margin: auto; }
+    .feature-item { display: flex; align-items: center; gap: 1rem; background-color: #fff; padding: 2rem; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); }
+    .feature-item img { width: 60px; }
+    .feature-item h4 { color: #00509e; margin-bottom: 0.5rem; }
+    .feature-item p { color: #555; }
 
     /* Footer */
-    footer { background-color: #002244; color: #fff; text-align: center; padding: 1.5rem 0; }
+    footer { background-color: #002244; color: #fff; text-align: center; padding: 2rem; }
   </style>
 </head>
 <body>
   <header>
-    <h1>PK Business Consultancies</h1>
+    <h1>Business Consultancy Solutions</h1>
   </header>
   <nav>
     <a href="index.html">Home</a>
     <a href="about.html">About Us</a>
     <a href="services.html">Services</a>
+    <a href="profile.html">Create Profile</a>
     <a href="contact.html">Contact Us</a>
   </nav>
+
+  <!-- Hero Section -->
   <section class="hero">
-    <h1>Your Partner in Success</h1>
+    <div>
+      <h1>Empowering Your Business to Excel</h1>
+      <p>We provide world-class consultancy services for businesses of all sizes.</p>
+    </div>
   </section>
-  <section class="content">
-    <h2>Leading the Way in Business Excellence</h2>
-    <p>We are committed to providing top-tier consultancy services, guiding you through every stage of your business journey with our expert advice and innovative strategies.</p>
+
+  <!-- Services Section -->
+  <section class="services">
+    <h2>Our Services</h2>
+    <div class="services-grid">
+      <div class="service-item">
+        <h3>Strategic Planning</h3>
+        <p>Our experts work with you to develop strategic plans that drive growth and success.</p>
+      </div>
+      <div class="service-item">
+        <h3>Financial Consulting</h3>
+        <p>We help you manage finances efficiently and maximize profit.</p>
+      </div>
+      <div class="service-item">
+        <h3>Market Research</h3>
+        <p>Gain insights into your industry and understand market trends with our comprehensive research.</p>
+      </div>
+    </div>
   </section>
+
+  <!-- Features Section -->
+  <section class="features">
+    <h2>Why Choose Us?</h2>
+    <div class="features-grid">
+      <div class="feature-item">
+        <img src="icon1.png" alt="Icon 1">
+        <div>
+          <h4>Experienced Consultants</h4>
+          <p>Our team has years of experience in various fields, bringing valuable insights to your business.</p>
+        </div>
+      </div>
+      <div class="feature-item">
+        <img src="icon3.png" alt="Icon 2">
+        <div>
+          <h4>Customized Solutions</h4>
+          <p>We understand that each business is unique and provide solutions tailored to your needs.</p>
+        </div>
+      </div>
+      <div class="feature-item">
+        <img src="icon2.png" alt="Icon 3">
+        <div>
+          <h4>Proven Track Record</h4>
+          <p>Our clients have experienced significant growth and efficiency with our services.</p>
+        </div>
+      </div>
+      <div class="feature-item">
+        <img src="icon4.png" alt="Icon 4">
+        <div>
+          <h4>24/7 Support</h4>
+          <p>We are here for you whenever you need support or guidance.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <footer>
     <p>&copy; 2024 Business Consultancy. All Rights Reserved.</p>
   </footer>
